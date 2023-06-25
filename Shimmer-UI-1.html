@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+    <style>
+      .card {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 0.45rem;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 1rem;
+      }
+
+      .skeleton-img {
+        width: 100%;
+        height: 70%;
+        background-color: pink;
+        border-radius: 0.25rem;
+        margin-bottom: 0.4rem;
+      }
+
+      .skeleton-text {
+        width: 100%;
+        height: 0.5rem;
+        background-color: green;
+        border-radius: 0.2rem;
+        margin-bottom: 0.2rem;
+      }
+
+      .skeleton-text:last-child {
+        margin-bottom: 0;
+        width: 80%;
+      }
+
+      .body {
+        margin-bottom: 0.5rem;
+      }
+
+      .skeleton {
+        opacity: 0.7;
+        animation: skeleton-loading 1s linear infinite alternate;
+      }
+
+      @keyframes skeleton-loading {
+        0% {
+          background-color: hsl(200, 20%, 70%);
+        }
+        100% {
+          background-color: hsl(200, 20%, 95%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="header skeleton-img skeleton"></div>
+      <div class="body">
+        <div class="skeleton-text skeleton"></div>
+        <div class="skeleton-text skeleton"></div>
+        <div class="skeleton-text skeleton"></div>
+      </div>
+      <div class="footer">
+        <div class="skeleton-text skeleton"></div>
+        <div class="skeleton-text skeleton"></div>
+      </div>
+    </div>
+  </body>
+</html>
