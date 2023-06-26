@@ -1,3 +1,4 @@
+//tailwindCSS : v3.3.2
 //customize no. of cards to be shown using this for loop;
 const items=[]
 for(let i=0;i<15;i++) items.push(i);
